@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS Development</title>
+    <meta name="author" content="Natnael Gashaw">
+    <meta name="description" content="Home page for Advanced JS crash course">
+    <meta property="og:title" content="Frontend web development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://natnael31.github.io/wdd231/project/images/og-image-home.webp">
+    <meta property="og:url" content="https://natnael31.github.io/project">
+    <meta property="og:image:alt" content="HTML,CSS, and JS!">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="images/logo.webp" id="logo" alt="logo_picture" loading="lazy"></a>
+            <h1>Advanced JS</h1>
+
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li id="home"><a href="#">Home</a></li>
+                <li id="promises"><a href="#">Promises</a></li>
+                <li id="functions"><a href="#">Functions</a></li>
+                <li id="callbacks"><a href="#">Callbacks</a></li>
+                <li id="register"><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="section_1">
+            <h2>Welcome to Advanced JavaScript</h2>
+            <p id="intro"><small><strong> Advanced JS</strong> encompasses complex concepts like promises, Higher-Order
+                    functions, and closures that enable powerful, efficient, and maintainable code beyond basic
+                    scripting.</small></p>
+            <div id="main_image">
+                <img src="images/home-banner.webp" alt="banner-image" loading="lazy">
+                <a id="join-button" class="join-button" href="#">Click to Register</a>
+            </div>
+        </section>
+
+        <section id="section_2">
+            <h2>List of Advanced JS Courses </h2>
+            <div id="home-cards">
+                <div>
+                    <a href="#"><img src="images/promise-home.webp" alt="Promises" loading="lazy"></a>
+                    <p>Promises</p>
+                    <a href="#promises-modal" class="clicked-modal" id="modal-button">Learn More</a>
+                </div>
+                <div>
+                    <a href="#"><img src="images/higher-order-home.webp" alt="Higher order functions "
+                            loading="lazy"></a>
+                    <p>Higher-Order Functions </p>
+                    <a href="#function-modal" class="clicked-modal" id="modal-button">Learn More</a>
+                </div>
+                <div>
+                    <a href="#"><img src="images/callbacks-home.webp" alt="Callbacks" loading="lazy"></a>
+                    <p>Callbacks </p>
+                    <a href="#callback-modal" class="clicked-modal" id="modal-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <dialog id="promises-modal">
+            <h2>Promises</h2>
+            <p>Learn how consume APIs and handle asynchronous programming!</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <dialog id="function-modal">
+            <h2>Higher Order Functions</h2>
+            <p>Learn about Higher order functions and closures!</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <dialog id="callback-modal">
+            <h2>Callbacks</h2>
+            <p>Learn about event loop, callbacks and how to avoid calback hell!</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+    </main>
+    <footer>
+        <div id="contact">
+            <p><strong> Advanced JS Development Crash Course</strong></p>
+            <p>Winget, Addis Ababa</p>
+            <p><a href="https://mail.google.com/">natystd21@gmail.com</a></p>
+            <p>(251) 931677672</p>
+        </div>
+
+        <div id="social_media">
+            <a href="https://youtube.com" target="_blank">
+                <img src="./images/play-button-4213.svg" width="40" alt="Youtube" loading="lazy">
+            </a>
+            <a href="https://twitter.com" target="blank">
+                <img src="./images/twitter-117.svg" width="40" alt="Twitter" loading="lazy">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="./images/linkedin-112.svg" width="40" alt="Linkedin" loading="lazy">
+            </a>
+        </div>
+
+        <div id="info">
+            <p>WDD330 Class Project</p>
+            <p>Natnael Gashaw Endashaw</p>
+            <p><span id="currentyear"></span> Frontend Web Development II</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
