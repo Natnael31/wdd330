@@ -65,7 +65,7 @@ register.addEventListener("click", () => {
 })
 
 // Main code
-const url = "https://www.googleapis.com/youtube/v3/search?q=callbacks+JS+tutorial&type=video&key=AIzaSyAPVODIkJlSYRq3Ztzftj6fwgiGVe104Yo&part=snippet,id&maxResults=9"
+const url = "https://www.googleapis.com/youtube/v3/search?q=callbacks+JS+tutorial&type=video&key=AIzaSyB1SrZz98jBxDWkN20cfgrPtw0ArejOHq0&part=snippet,id&maxResults=9"
 const cards = document.getElementById('home-cards');
 
 let getVideos = async () => {

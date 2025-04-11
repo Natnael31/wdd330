@@ -13,50 +13,50 @@ ham.addEventListener('click', () => {
 
 // header way finding code
 const home = document.getElementById('home');
-const html = document.getElementById('html');
-const css = document.getElementById('css');
-const js = document.getElementById('js');
+const promises = document.getElementById('promises');
+const functions = document.getElementById('functions');
+const callbacks = document.getElementById('callbacks');
 const register = document.getElementById('register');
 
 register.classList.add('active');
 home.addEventListener("click", () => {
     home.classList.add('active');
-    html.classList.remove('active');
-    css.classList.remove('active');
-    js.classList.remove('active');
+    promises.classList.remove('active');
+    functions.classList.remove('active');
+    callbacks.classList.remove('active');
     register.classList.remove('active');
 })
 
-html.addEventListener("click", () => {
-    html.classList.add('active');
+promises.addEventListener("click", () => {
+    promises.classList.add('active');
     home.classList.remove('active');
-    css.classList.remove('active');
-    js.classList.remove('active');
+    functions.classList.remove('active');
+    callbacks.classList.remove('active');
     register.classList.remove('active');
 })
 
-css.addEventListener("click", () => {
-    css.classList.add('active');
+functions.addEventListener("click", () => {
+    functions.classList.add('active');
     home.classList.remove('active');
-    html.classList.remove('active');
-    js.classList.remove('active');
+    promises.classList.remove('active');
+    callbacks.classList.remove('active');
     register.classList.remove('active');
 })
 
-js.addEventListener("click", () => {
-    js.classList.add('active');
+callbacks.addEventListener("click", () => {
+    callbacks.classList.add('active');
     home.classList.remove('active');
-    html.classList.remove('active');
-    css.classList.remove('active');
+    promises.classList.remove('active');
+    functions.classList.remove('active');
     register.classList.remove('active');
 })
 
 register.addEventListener("click", () => {
     register.classList.add('active');
     home.classList.remove('active');
-    html.classList.remove('active');
-    css.classList.remove('active');
-    js.classList.remove('active')
+    promises.classList.remove('active');
+    functions.classList.remove('active');
+    callbacks.classList.remove('active')
 })
 
 

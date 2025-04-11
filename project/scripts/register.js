@@ -1,8 +1,3 @@
-// import ES module's display function
-
-import displayItems from "./display.js";
-
-
 // header code
 
 // Burger code
