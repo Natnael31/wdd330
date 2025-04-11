@@ -23,7 +23,7 @@ const functions = document.getElementById('functions');
 const callbacks = document.getElementById('callbacks');
 const register = document.getElementById('register');
 
-promises.classList.add('active');
+callbacks.classList.add('active');
 home.addEventListener("click", () => {
     home.classList.add('active');
     promises.classList.remove('active');
@@ -65,7 +65,7 @@ register.addEventListener("click", () => {
 })
 
 // Main code
-const url = "https://www.googleapis.com/youtube/v3/search?q=promises+JS+Async+tutorial&type=video&key=AIzaSyAPVODIkJlSYRq3Ztzftj6fwgiGVe104Yo&part=snippet,id&maxResults=9"
+const url = "https://www.googleapis.com/youtube/v3/search?q=callbacks+JS+tutorial&type=video&key=AIzaSyAPVODIkJlSYRq3Ztzftj6fwgiGVe104Yo&part=snippet,id&maxResults=9"
 const cards = document.getElementById('home-cards');
 
 let getVideos = async () => {

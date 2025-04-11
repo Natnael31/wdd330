@@ -23,7 +23,7 @@ const functions = document.getElementById('functions');
 const callbacks = document.getElementById('callbacks');
 const register = document.getElementById('register');
 
-promises.classList.add('active');
+register.classList.add('active');
 home.addEventListener("click", () => {
     home.classList.add('active');
     promises.classList.remove('active');
@@ -64,28 +64,10 @@ register.addEventListener("click", () => {
     callbacks.classList.remove('active')
 })
 
-// Main code
-const url = "https://www.googleapis.com/youtube/v3/search?q=promises+JS+Async+tutorial&type=video&key=AIzaSyAPVODIkJlSYRq3Ztzftj6fwgiGVe104Yo&part=snippet,id&maxResults=9"
-const cards = document.getElementById('home-cards');
-
-let getVideos = async () => {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data.items);
-
-        data.items.forEach(element => {
-            cards.append(displayItems(element));
-        });
 
 
-    } catch (error) {
-        console.log(error);
-    }
 
-}
 
-getVideos();
 
 // Footer code
 let currentDate = new Date();
