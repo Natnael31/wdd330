@@ -137,13 +137,13 @@ main {
     cursor: pointer;
     padding: 20px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     background-color: var(--paragraph-color);
     color: white;
     opacity: 0.9;
-    width: 40%;
-    top: 200px;
+    width: 25%;
+    top: 192px;
     left: 30px;
     background-color: black;
 }
