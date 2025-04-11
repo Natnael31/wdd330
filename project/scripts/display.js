@@ -1,4 +1,4 @@
-export function displayItems(element) {
+export default function displayItems(element) {
 
     let card = document.createElement('div');
     let title = document.createElement('h4');
