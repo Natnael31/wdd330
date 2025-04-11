@@ -135,7 +135,7 @@ main {
     text-align: center;
     display: block;
     cursor: pointer;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     font-size: 13px;
     font-weight: 700;
@@ -445,6 +445,7 @@ footer a img:hover {
 
     #join-button {
         font-size: 20px;
+        padding: 20px;
         width: 30%;
         top: 415px;
     }
