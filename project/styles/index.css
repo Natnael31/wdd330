@@ -39,8 +39,8 @@ header img {
 
 header div h1 {
     color: white;
-    font-size: 30px;
-    padding-left: 10px;
+    font-size: 20px;
+    padding-left: 5px;
 }
 
 nav ul li {
@@ -137,13 +137,13 @@ main {
     cursor: pointer;
     padding: 20px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     background-color: var(--paragraph-color);
     color: white;
     opacity: 0.9;
-    width: 25%;
-    top: 192px;
+    width: 30%;
+    top: 170px;
     left: 30px;
     background-color: black;
 }
@@ -408,6 +408,11 @@ footer a img:hover {
 
     header {
         display: flex;
+    }
+
+    header div h1 {
+        font-size: 30px;
+        padding-left: 10px;
     }
 
     header img {
