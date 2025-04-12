@@ -172,7 +172,20 @@ main {
     padding: 10px;
 }
 
+#weather p {
+    margin-bottom: -10px;
+    margin-top: -10px;
+    font-weight: normal !important;
+}
+
+#weather-icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: -10px;
+}
+
 #section_2 p {
+
     font-weight: 900;
     font-size: 20px;
     padding: 10px;
@@ -212,7 +225,7 @@ button:hover {
 
 }
 
-#modal-button {
+.modal-button {
     text-decoration: none;
     display: block;
     cursor: pointer;

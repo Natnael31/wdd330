@@ -60,6 +60,47 @@ register.addEventListener("click", () => {
 })
 
 // Main code
+const weather_url = 'https://api.openweathermap.org/data/2.5/weather?&units=imperial&lat=9&lon=38.74&appid=4ed520167b53b456179e69213b3fee16';
+const weather_data = document.getElementById('weather-data');
+const weatherIcon = document.getElementById('weather-icon');
+
+// Display Weather data
+
+function displayWeather(data) {
+    let currentTemp = document.createElement('p');
+    let weather_description = document.createElement('p');
+    let country = document.createElement('p');
+    currentTemp.innerHTML = `<strong>Current tempreature</strong>: ${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weather_description.innerHTML = `<strong>Weather-description</strong>: ${desc}`;
+    let country_info = data.name;
+    country.innerHTML = `Ethiopia, ${country_info}`
+    country.classList.add('country');
+    weather_data.appendChild(country);
+    weather_data.appendChild(weatherIcon);
+    weather_data.appendChild(currentTemp);
+    weather_data.appendChild(weather_description);
+}
+
+// fetch weather
+async function apiFetch() {
+    try {
+        const response = await fetch(weather_url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayWeather(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
 
 // modal code
 
